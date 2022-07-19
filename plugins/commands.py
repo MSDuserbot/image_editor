@@ -24,7 +24,7 @@ async def start(client: Client, message: Message):
                     ],
                 ]
             ),
-            reply_to_message_id=message.message_id,
+            reply_to_message_id=message.id,
         )
     except Exception:
         pass
@@ -76,7 +76,7 @@ async def about(client, message):
                     ],
                 ]
             ),
-            reply_to_message_id=message.message_id,
+            reply_to_message_id=message.id,
         )
     except Exception:
         pass
